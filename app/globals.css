@@ -10141,3 +10141,216 @@ html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) :is(
     transition: none;
   }
 }
+
+/* OrgoRush Phase 2: refine the existing header without changing its controls. */
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header {
+  min-height: 62px;
+  gap: clamp(12px, 2vw, 24px);
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-card-radius);
+  background: var(--brand-surface);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .brand-mark {
+  flex: 0 0 46px;
+  width: 46px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: none;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .brand-mark img {
+  width: 40px;
+}
+
+.app-shell .site-header .brand-copy {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .brand-copy h1 {
+  color: var(--brand-ink);
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+  overflow-wrap: normal;
+}
+
+.app-shell .site-header .lab-entry-actions {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.app-shell .site-header .lab-entry-actions .guided-tour-launch {
+  min-height: 40px;
+  margin-left: 0;
+  padding: 7px 12px;
+  border: 1px solid var(--brand-border);
+  border-radius: 10px;
+  background: var(--brand-surface);
+  box-shadow: none;
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color var(--brand-transition),
+    border-color var(--brand-transition), color var(--brand-transition);
+}
+
+.app-shell .site-header .lab-entry-actions .guided-tour-launch:hover:not(:disabled),
+.app-shell .site-header .lab-entry-actions .guided-tour-launch[aria-expanded="true"] {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+}
+
+.app-shell .site-header .lab-entry-actions .guided-tour-launch:focus-visible {
+  outline: 3px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .practice-launch {
+  border-color: var(--brand-border);
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .practice-launch:hover:not(:disabled),
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .practice-launch[aria-expanded="true"] {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .docx-export-launch {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: var(--brand-surface);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .docx-export-launch:hover:not(:disabled),
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header .docx-export-launch[aria-expanded="true"] {
+  border-color: var(--brand-primary-hover);
+  background: var(--brand-primary-hover);
+  color: var(--brand-surface);
+}
+
+@media (max-width: 760px) {
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .site-header {
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 7px 9px;
+  }
+
+  .app-shell .site-header .lab-entry-actions {
+    gap: 6px;
+  }
+
+  .app-shell .site-header .lab-entry-actions .guided-tour-launch {
+    min-height: 40px;
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .app-shell .site-header .lab-entry-actions .guided-tour-launch {
+    padding-inline: 7px;
+    font-size: 11px;
+  }
+}
+
+/* OrgoRush Phase 3: make the existing instructional loop easier to scan. */
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .information-column .intro-strip {
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 58px;
+  padding: 9px 12px;
+  border-color: var(--brand-border);
+  border-radius: 14px;
+  background: var(--brand-surface);
+  box-shadow: none;
+}
+
+.app-shell .information-column .intro-strip > div {
+  position: relative;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.app-shell .information-column .intro-strip > div:nth-child(-n + 2)::after {
+  content: "";
+  flex: 0 0 16px;
+  width: 16px;
+  height: 1px;
+  margin-left: 4px;
+  background: var(--brand-border);
+}
+
+.app-shell .information-column .intro-strip .step-number {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d9e3ff;
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .information-column .intro-strip p {
+  min-width: 0;
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .information-column .intro-strip strong {
+  color: var(--brand-ink);
+  font-weight: 650;
+}
+
+@media (max-width: 1000px) {
+  .app-shell .information-column .intro-strip {
+    gap: 10px;
+    padding-inline: 11px;
+  }
+
+  .app-shell .information-column .intro-strip > div {
+    gap: 6px;
+  }
+
+  .app-shell .information-column .intro-strip > div:nth-child(-n + 2)::after {
+    flex-basis: 12px;
+    width: 12px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 460px) {
+  .app-shell .information-column .intro-strip {
+    gap: 10px;
+    min-height: 54px;
+    padding: 8px 10px;
+  }
+
+  .app-shell .information-column .intro-strip > div {
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+}
