@@ -10586,6 +10586,447 @@ html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .workspace-gri
   }
 }
 
+/* OrgoRush Phase 5: refine analysis hierarchy while preserving chemical data. */
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel {
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-card-radius);
+  background: var(--brand-surface);
+  box-shadow: var(--brand-shadow);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading {
+  align-items: center;
+  gap: 14px;
+  padding: 20px 20px 16px;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading .eyebrow {
+  color: var(--brand-primary);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading h2 {
+  color: var(--brand-ink);
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .panel-heading-end {
+  align-items: flex-start;
+  gap: 8px;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-status {
+  gap: 6px;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .valid-badge {
+  padding: 6px 9px;
+  border: 1px solid #b9e6c9;
+  border-radius: 9px;
+  background: #f0fbf4;
+  color: #18733b;
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle {
+  min-height: 30px;
+  padding: 0 9px;
+  border-color: var(--brand-border);
+  border-radius: 9px;
+  background: var(--brand-surface);
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  transition: background-color var(--brand-transition),
+    border-color var(--brand-transition), color var(--brand-transition);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle.is-active {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle.is-active > span {
+  background: var(--brand-primary);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle:disabled {
+  border-color: var(--brand-border);
+  background: var(--brand-background);
+  color: var(--brand-muted);
+  opacity: 0.68;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection {
+  align-items: flex-start;
+  gap: 10px;
+  margin: 8px 20px 0;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection > span {
+  padding-top: 6px;
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection strong {
+  padding: 5px 9px;
+  border-radius: 9px;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 650;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row {
+  gap: 8px;
+  margin: 16px 20px 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row > div {
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  background: var(--brand-background);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row span {
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.07em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row strong {
+  color: var(--brand-ink);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context {
+  margin: 14px 20px 0;
+  padding: 14px;
+  border-color: var(--brand-border);
+  border-radius: 14px;
+  background: var(--brand-surface);
+  box-shadow: 0 1px 4px rgb(17 24 39 / 3%);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .info-eyebrow {
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.09em;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context h3 {
+  color: var(--brand-ink);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context p {
+  color: var(--brand-muted);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .source-toggle {
+  border: 1px solid var(--brand-border);
+  border-radius: 9px;
+  background: var(--brand-background);
+  color: var(--brand-ink);
+  font-family: var(--font-ui);
+  transition: background-color var(--brand-transition),
+    border-color var(--brand-transition), color var(--brand-transition);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .source-toggle:hover:not(:disabled) {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .info-visibility {
+  border: 1px solid var(--brand-border);
+  border-radius: 9px;
+  color: var(--brand-muted);
+  transition: background-color var(--brand-transition),
+    border-color var(--brand-transition), color var(--brand-transition);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .info-visibility:hover {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-formula {
+  margin-bottom: 10px;
+  color: var(--brand-ink);
+  font-size: 19px;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-grid {
+  grid-template-columns: minmax(82px, 0.55fr) minmax(0, 1.45fr);
+  gap: 7px 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--brand-border);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-label {
+  color: var(--brand-muted);
+  font-weight: 600;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-value {
+  color: var(--brand-ink);
+  font-weight: 550;
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .external-info-link {
+  color: var(--brand-primary);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  transition: color var(--brand-transition);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .external-info-link:hover {
+  color: var(--brand-primary-hover);
+}
+
+html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel :is(
+  .stereochemistry-toggle, .source-toggle, .info-visibility, .external-info-link
+):focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading {
+    gap: 10px;
+    padding: 16px 16px 14px;
+  }
+
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection,
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row {
+    gap: 6px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) #analysis-panel :is(
+    .stereochemistry-toggle, .source-toggle, .info-visibility, .external-info-link
+  ) {
+    transition: none;
+  }
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel {
+  border: 1px solid #334b44;
+  border-radius: var(--brand-card-radius);
+  background: var(--paper);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading {
+  align-items: center;
+  gap: 14px;
+  padding: 20px 20px 16px;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading .eyebrow {
+  color: #a9baff;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading h2 {
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .valid-badge {
+  border: 1px solid #376448;
+  border-radius: 9px;
+  background: #1b3527;
+  color: #a9e6b9;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle {
+  border-color: #3a514a;
+  border-radius: 9px;
+  background: #1c2c27;
+  color: #b6c9c2;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle.is-active {
+  border-color: var(--brand-primary);
+  background: color-mix(in srgb, var(--brand-primary) 20%, var(--paper));
+  color: #c8d3ff;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle.is-active > span {
+  background: var(--brand-primary);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .stereochemistry-toggle:disabled {
+  border-color: #30443f;
+  background: #14201d;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection > span {
+  color: #9eabb9;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection strong {
+  border-radius: 9px;
+  font-family: var(--font-ui);
+  font-size: 10px;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row {
+  gap: 8px;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row > div {
+  min-width: 0;
+  border: 1px solid #334b44;
+  border-radius: 12px;
+  background: #172521;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row span {
+  color: #9eabb9;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row strong {
+  color: #e4eee9;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context {
+  border-color: #344b44;
+  border-radius: 14px;
+  background: #172521;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .info-eyebrow,
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-label {
+  color: #9eabb9;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context h3,
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-formula,
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-value {
+  color: #d0e0da;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context p {
+  color: #a1b3ac;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .source-toggle,
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .info-visibility {
+  border: 1px solid #3a514a;
+  border-radius: 9px;
+  background: #1c2c27;
+  color: #b6c9c2;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .source-toggle:hover:not(:disabled),
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .info-visibility:hover {
+  border-color: var(--brand-primary);
+  background: color-mix(in srgb, var(--brand-primary) 20%, var(--paper));
+  color: #c8d3ff;
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .pubchem-grid {
+  border-color: #334b44;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .external-info-link {
+  color: #a9baff;
+  font-family: var(--font-ui);
+}
+
+html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel :is(
+  .stereochemistry-toggle, .source-toggle, .info-visibility, .external-info-link
+):focus-visible {
+  outline: 2px solid #9fb2ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .analysis-heading {
+    gap: 10px;
+    padding: 16px 16px 14px;
+  }
+
+  html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .functional-detection,
+  html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .real-world-context {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel .formula-row {
+    gap: 6px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="dark"] .app-shell:not(.a11y-high-contrast) #analysis-panel :is(
+    .stereochemistry-toggle, .source-toggle, .info-visibility, .external-info-link
+  ) {
+    transition: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:not([data-theme="dark"]) .app-shell:not(.a11y-high-contrast) .workspace-grid > #structure-panel :is(
     .heading-actions button, .view-mode-switch button, .history-controls button,
